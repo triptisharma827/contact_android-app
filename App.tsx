@@ -94,7 +94,7 @@ function App(): JSX.Element {
   }, []);
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? 'grey' : 'white',
+    backgroundColor: isDarkMode ? 'grey' : 'grey',
     height: screenHeight,
   };
 
@@ -172,13 +172,13 @@ function App(): JSX.Element {
         
             <View>
             <TouchableOpacity onPress={hideContent} style={{backgroundColor:'#394867', marginBottom:40,}}>
-              <Text style={{ fontSize : 20}} >X</Text>
+              <Text style={{ fontSize : 20,color:'white'}} >X</Text>
             </TouchableOpacity>
 
-            <Text>Total Contacts ({cnt})</Text>
-            <Text>Buisness Contacts ({business})</Text>
-            <Text>Family Contacts ({family})</Text>
-            <Text>Friends Contacts({friends})</Text></View>
+            <Text style={{color:'white'}}>Total Contacts ({cnt})</Text>
+            <Text style={{color:'white'}}>Buisness Contacts ({business})</Text>
+            <Text style={{color:'white'}}>Family Contacts ({family})</Text>
+            <Text style={{color:'white'}}>Friends Contacts({friends})</Text></View>
           
           
         </View>)}
